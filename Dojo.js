@@ -121,6 +121,10 @@ pessoa2.falar();
   console.log("\nErro func 2")
 }
 
+// 1: código 1, que utiliza uma function tradicional
+// 2: arrow function não possui this. Nesse caso, ela não considera pessoa2 como this, então this.nome não corresponde ao nome do objeto.
+// 3: Ele pega o this de fora da função. Então ele não muda para representar o objeto onde a arrow function está.
+
 // Parte 7
 // Gera um objeto com informações gerais dos usuários, utilizando
 // métodos de array para contar, calcular a média e encontrar o
