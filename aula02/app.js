@@ -1,3 +1,4 @@
+const _ = require('lodash')
 const express = require('express')
 const operacoes = require('./operacoes')
 
@@ -9,8 +10,10 @@ app.use(operacoes)
 
 app.listen(porta, () => {
     console.log(`Servidor Express exec na porta ${porta}`)
-    }
-)
+
+    console.log(`Número aleatório: ${_.random(1, 30)}`);
+})
+
 
 // const http = require("http");
 

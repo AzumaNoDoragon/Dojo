@@ -12,7 +12,7 @@ operacoes.route("/adicao")
 
 operacoes.route("/subtracao")
     .get((req, res) => res.send(`Você está na rota subtracao`))
-    .post((req, res) => res.json({ resultado: req.body.a + req.body.b }))
+    .post((req, res) => res.json({ resultado: req.body.a - req.body.b }))
     .all(methodError)
 
 operacoes.route("/multiplicacao")
@@ -33,7 +33,5 @@ operacoes.route("/divisao")
         resultado: req.body.a / req.body.b
     })
 })
-
-operacoes.post
 
 module.exports = operacoes;
